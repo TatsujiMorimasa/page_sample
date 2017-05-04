@@ -1,0 +1,17 @@
+table{
+	border-collapse: collapse;
+	text-align: center;
+	font-family: sans-serif;
+}
+th,td{
+	padding: 0.3em 0.7em;
+	border: 1px solid darkgoldenrod;
+}
+th {
+	color: white;
+	background-color: saddlebrown;
+}
+th:first-child{ background-color: maroon; }
+tbody tr:nth-child(2n+1) td{ background-color: ivory; }
+tbody tr:nth-child(2n) td{ background-color: cornsilk; }
+tfoot td { background-color: wheat; }

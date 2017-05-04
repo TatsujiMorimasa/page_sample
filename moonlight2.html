@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+	<meta charset="utf-8">
+	<title>月の光</title>
+<!-- CSS埋め込み(style属性で直接スタイルを設定することも可能) -->
+	<style type="text/css">
+		@import url("moon_style.css");
+	</style>
+</head>
+<body>
+<!-- コンテナ -->
+<div id="container">
+<!-- ヘッダ -->
+<header>
+	<h1>月の光</h1>
+<!-- パンくずリスト -->
+		<a href="./index.html">トップページ</a> &gt;
+		<a href="./moon.html">月</a> &gt; 月の光
+</header>
+<!-- コンテンツ -->
+<section>
+	<a href="#music">音楽作品</a>
+	<h2>月の光について</h2>
+	<img src="./images/luna.jpg" alt="月光"　width=50%>
+	<p>
+		月の光は<a href="./images/sun.jpg" target="_blank">太陽</a>からの光が月の表面に反射して地球に届いたものです。月の光は古くから神秘的なものと捉えられてきました。芸術や文学の作品で月をモチーフにしたものがたくさんあります。
+	</p>
+	<p>月の明るさは月齢によって大きく変化します。最も明るいのは満月のときでおよそ0.2ルクスです。これは全天で太陽に次ぐ明るさで、太陽の50万分の1、<em>太陽の50万分の1</em>、<strong>金星の1500倍</strong>の明るさです。</p>
+</section>
+<section>
+	<h2 id="waka">月の光をテーマとした和歌</h2>
+	<ol start="1">
+	<!--
+	番号反転するやつ（今は使わない）
+	<ol reversed="reversed">
+	-->
+		<li>「<ruby>天<rt>あま</rt></ruby>の原、振り<ruby>放<rt>さ</rt></ruby>け見れば、<ruby>白真弓<rt>しらまゆみ</rt></ruby>、張りて<ruby>懸<rt>か</rt></ruby>けたり、夜道はよけむ」（万葉集より）</li>
+		<li>「今来むといひしばかりに<ruby>長月<rt>ながつき</rt></ruby>の　<ruby>有明<rt>ありあけ</rt></ruby>の夜を待ち出づるかな」（古今和歌集より）</li>
+		<li>「あたら夜の月と花とを　おなじくは　あはれ知れらむ人に見せばや」（後撰和歌集より）</li>
+	</ol>
+</section>
+<section>
+	<h2 id="music">月の光の名のついた音楽作品</h2>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=qRz0VJxDuIw">
+			ドピュッシー「ベルガマスク組曲第３曲」（月の光）
+			</a>
+		</li>
+		<li>フェルナンド・ソル「20のギター向け練習曲第５番」（月光）<br>
+			<audio controls>
+			<source src="./movies/soru.mp3" type="audio/mpeg">
+			<source src="./movies/soru.webm" type="audio/webm">
+			<source src="./movies/soru.ogv" type="audio/ogg">
+				<p>ご利用のブラウザでは再生できません。</p>
+			</audio>
+			</a>
+		</li>
+		<li>ベートーヴェン「ピアノソナタ第１４番」（月光）<br>
+			<video controls width=320px>
+			<source src="./movies/moonlight_sonata.mp4" type="video/mp4">
+			<source src="./movies/moonlight_sonata.webm" type="video/webm">
+			<source src="./movies/moonlight_sonata.ogv" type="video/ogg">
+				<p>ご利用のブラウザでは再生できません。</p>
+			</video>
+			</a>
+		</li>
+	</ul>
+</section>
+<!-- フッタ -->
+<footer>
+	<hr>
+	<p>Copyright (C) Cosmos, All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>

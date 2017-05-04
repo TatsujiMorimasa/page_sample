@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>簡単なフォームの例</title>
+	<style type="text/css">
+		h1 {
+			font-size: 1.5em;
+		}
+		h2 {
+			font-size: 1.2em;
+			border-left: 6px solid skyblue; padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="mailto:iso@cosmos.co.jp?Subject=アンケート">
+	<h1>宇宙旅行アンケート調査</h1>
+	<fieldset>
+		<legend>個人情報</legend>
+		<label for="username">氏名：</label>
+		<input type="text" id="username" name="username">
+		<label for="addless">住所：</label>
+		<input type="text" id="addless" name="addless">
+	</fieldset>
+	<fieldset>
+	<legend>アンケート内容</legend>
+	<h2>宇宙旅行に行ってみたいですか？</h2>
+	<p>
+		<input type="radio" name="wish" value="positively">ぜひ行ってみたい<br>
+		<input type="radio" name="wish" value="litte">やや行ってみたい<br>
+		<input type="radio" name="wish" value="less">あまり行きたいと思わない<br>
+		<input type="radio" name="wish" value="no">絶対行きたくない<br>
+	</p>
+	<h2>宇宙旅行に行きたい天体は？</h2>
+	<p><input type="text" name="place" placeholder="天体の名前"></p>
+	</fieldset>
+	<p>
+		<input type="submit" value="送信">
+		<input type="reset" value="取消">
+	</p>
+	</form>
+</body>
+</html>

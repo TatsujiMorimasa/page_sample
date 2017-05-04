@@ -1,0 +1,32 @@
+h1,legend{
+	color: darkblue;
+}
+fieldset{
+	margin-bottom: 10px;
+	border: 2px solid blue;
+}
+fieldset#personal dt{
+	float: left;
+	width: 90px;
+	text-align: right;
+	padding-right: 15px;
+}
+fieldset#question p{
+	margin-left: 15px;
+}
+h2{
+	border-left: 6px solid skyblue;
+	padding-left: 12px;
+	font-size: 1.2em;
+}
+p#planets label{
+	float: left;
+	width: 100px;
+	margin: 5px 0;
+}
+p#planets label:last-child{
+	margin-bottom: 25px;
+}
+fieldset#question h2{
+	clear: both;
+}

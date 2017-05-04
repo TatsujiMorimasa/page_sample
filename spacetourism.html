@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>いろいろなコントロール</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="form_style.css">
+</body>
+	<form method="post" action="mailto:iso@cosmos.co.jp?Subject=アンケート">
+		<h1>宇宙旅行アンケート調査</h1>
+		<fieldset id="personal">
+		<legend>アンケート内容</legend>
+			<dl>
+				<dt><label for="name">氏名：</label></dt>
+				<dd><input type="text" name="name" id="name"></dd>
+			</dl><dl>
+				<dt><label>性別</label></dt>
+				<dd>
+					<label><input type="radio" name="sex" value="male">男</label>
+					<label><input type="radio" name="sex" value="female">女</label>
+				</dd>
+			</dl><dl>
+				<dt><label for="born">誕生日</label></dt>
+				<bb><input type="date" name="born" id="born"></bb>
+			</dl><dl>
+				<dt><label for="bloodtype">血液型</label></dt>
+				<dd>
+					<select name="bloodtype" id="bloodtype">
+						<option>A型</option>
+						<option>B型</option>
+						<option>O型</option>
+						<option>AB型</option>
+					</select>
+				</dd>
+			</dl><dl>
+				<dt><label for="FavoriteColor">好きな色は</label></dt>
+				<dd><input type="color" name="FavoriteColor" id="FavoriteColor"></dd>
+			</dl><dl>
+				<dt></dt>
+				<dt><label for="FavoriteNumber">好きな数は</label></dt>
+				<dd><input type="number" name="FavoriteNumber" id="FavoriteNumber"></label></dt>
+			</dl>
+		</fieldset>
+		<fieldset id="question">
+			<legend>アンケート内容</legend>
+			<h2>宇宙旅行に行ってみたいですか？</h2>
+			<p>
+				<label><input type="radio" name="wish" value="positively">ぜひ行ってみたい<br></label>
+				<label><input type="radio" name="wish" value="litte">やや行ってみたい<br></label>
+				<label><input type="radio" name="wish" value="less">あまり行きたいと思わない<br></label>
+				<label><input type="radio" name="wish" value="no">絶対行きたくない<br></label>
+			</p>
+			<h2>宇宙旅行に行きたい天体は？</h2>
+			<p id="planets">
+				<label><input type="checkbox" name="planets" value="mercury">水星</label>
+				<label><input type="checkbox" name="planets" value="venus">金星</label>
+				<label><input type="checkbox" name="planets" value="mars">火星</label>
+				<label><input type="checkbox" name="planets" value="asteroidbelt">小惑星帯</label>
+				<label><input type="checkbox" name="planets" value="jupiter">木星</label>
+				<label><input type="checkbox" name="planets" value="saturn">土星</label>
+				<label><input type="checkbox" name="planets" value="uranus">天王星</label>
+				<label><input type="checkbox" name="planets" value="neputune">海王星</label>
+				<label><input type="checkbox" name="planets" value="pluto">冥王星</label>
+			</p>
+			<h2>意見</h2>
+			<p><textarea name="option" rows="6" cols="80">ご意見をお聞かせください</textarea></p>
+		</fieldset>
+		<p><input type="image" src="./images/submit.png" alt="送信"></p>
+	</form>
+</dody>
+</html>
